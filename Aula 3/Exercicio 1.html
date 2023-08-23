@@ -17,6 +17,7 @@
     <button onclick="somar()">Somar</button>
     <button onclick="subtrair()">Subtrair</button>
     <button onclick="multiplicar()">Multiplicar</button>
+    <button onclick="divisão()">Divisão</button>
     <p id="resultado"></p>
     <script>
     function somar(){
@@ -59,7 +60,19 @@
 
 
     }
+    function divisao(){
+        let numero1; //Primeiro número a ser digitado
+        let numero2; //Segundo número a ser digitado
+        let divisao; //resultado da divisão
 
+        numero1 =  Number(document.getElementById("num1").value);
+        numero2 =  Number(document.getElementById("num2").value);
+
+        divisao = numero1/numero2
+
+        document.getElementById("resultado").innerText = "O resultado da divisão foi: " + divisão;
+
+    }
 
     </script>
     <p id="resultado"></p>
