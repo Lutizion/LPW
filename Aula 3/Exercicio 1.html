@@ -13,8 +13,8 @@
         <label for="lname">Digite o Segundo Número:</label><br>
         <input type="text" id="num2" name="lname"><br><br>
         
-      </form> 
-      <button onclick="somar()">Somar</button>
+    </form> 
+    <button onclick="somar()">Somar</button>
     <script>
     function somar(){
         let numero1; // primeiro número a ser digitado
@@ -26,7 +26,7 @@
 
         soma = numero1 + numero2;
 
-        document.getElementById("resultado").innerText = soma;
+        document.getElementById("resultado").innerText = "O resultado do calculo foi: " + soma;
 
     }
     </script>
