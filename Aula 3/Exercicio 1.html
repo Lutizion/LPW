@@ -68,9 +68,16 @@
         numero1 =  Number(document.getElementById("num1").value);
         numero2 =  Number(document.getElementById("num2").value);
 
-        divisao = numero1/numero2
+        if(numero2 === 0){
+            document.getElementById("resultado").innerText = "Não existe divisão por zero";
+        }
+        else{
+            divisao = numero1/numero2 
+            document.getElementById("resultado").innerText = "O resultado da divisão foi: " + divisao;
+        }
+        
 
-        document.getElementById("resultado").innerText = "O resultado da divisão foi: " + divisao;
+        
 
     }
 
