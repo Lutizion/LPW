@@ -23,11 +23,13 @@
         let numero1; // primeiro número a ser digitado
         let numero2; // segundo número a ser digitado
 
-        numero1 = Number(document.getElementById("num1").value);
-        numero2 = Number(document.getElementById("num2").value);
+        
     function somar(){
         
         let soma; // resultado da soma dos números digitado
+
+        numero1 = Number(document.getElementById("num1").value);
+        numero2 = Number(document.getElementById("num2").value);
 
         soma = numero1 + numero2;
 
@@ -37,6 +39,9 @@
     function subtrair(){
         let subtrair; // resultado da subtração dos números digitado
 
+        numero1 = Number(document.getElementById("num1").value);
+        numero2 = Number(document.getElementById("num2").value);
+
         subtrair = numero1 - numero2;
 
         document.getElementById("resultado").innerText = "O resultado da subtração foi: " + subtrair;
@@ -44,6 +49,9 @@
     }
     function multiplicar(){
         let multiplicar; // resultado da multiplicação dos números digitado
+
+        numero1 = Number(document.getElementById("num1").value);
+        numero2 = Number(document.getElementById("num2").value);
 
         multiplicar = numero1 * numero2;
 
@@ -53,6 +61,9 @@
     }
     function dividir(){
         let divisao; //resultado da divisão
+
+        numero1 = Number(document.getElementById("num1").value);
+        numero2 = Number(document.getElementById("num2").value);
 
         if(numero2 === 0){
             document.getElementById("resultado").innerText = "Não existe divisão por zero";
