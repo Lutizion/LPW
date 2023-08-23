@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <h2>Somatório</h2>
     <form>
         <label for="fname">Digite o Primeiro Número:</label><br>
         <input type="text" id="num1" name="fname"><br>
@@ -13,10 +14,23 @@
         <input type="text" id="num2" name="lname"><br><br>
         
       </form> 
-      <input type="submit" value="Resultado">
+      <input type="submit" value="Calcular" action="soma()">
     <script>
-        
+    function somar(){
+        let numero1; // primeiro número a ser digitado
+        let numero2; // segundo número a ser digitado
+        let soma; // resultado da soma dos números digitado
 
+        numero1 = document.getElementById(num1).value;
+        numero2 = document.getElementById(num2).value;
+
+        soma = numero1 + numero2;
+
+        document.getElementById("resultado").innerText = soma;
+
+    }
     </script>
+    <p id="resultado"></p>
+
 </body>
 </html>
