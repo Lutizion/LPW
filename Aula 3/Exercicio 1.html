@@ -20,13 +20,14 @@
     <button onclick="dividir()">Divisão</button>
     <p id="resultado"></p>
     <script>
-    function somar(){
         let numero1; // primeiro número a ser digitado
         let numero2; // segundo número a ser digitado
-        let soma; // resultado da soma dos números digitado
 
         numero1 = Number(document.getElementById("num1").value);
         numero2 = Number(document.getElementById("num2").value);
+    function somar(){
+        
+        let soma; // resultado da soma dos números digitado
 
         soma = numero1 + numero2;
 
@@ -34,12 +35,7 @@
 
     }
     function subtrair(){
-        let numero1; //primeiro número
-        let numero2; //segundo número
         let subtrair; // resultado da subtração dos números digitado
-
-        numero1 =  document.getElementById("num1").value;
-        numero2 =  document.getElementById("num2").value;
 
         subtrair = numero1 - numero2;
 
@@ -47,12 +43,7 @@
 
     }
     function multiplicar(){
-        let numero1; //primeiro número
-        let numero2; //segundo número
         let multiplicar; // resultado da multiplicação dos números digitado
-
-        numero1 =  document.getElementById("num1").value;
-        numero2 =  document.getElementById("num2").value;
 
         multiplicar = numero1 * numero2;
 
@@ -61,12 +52,7 @@
 
     }
     function dividir(){
-        let numero1; //Primeiro número a ser digitado
-        let numero2; //Segundo número a ser digitado
         let divisao; //resultado da divisão
-
-        numero1 =  document.getElementById("num1").value;
-        numero2 =  document.getElementById("num2").value;
 
         if(numero2 === 0){
             document.getElementById("resultado").innerText = "Não existe divisão por zero";
