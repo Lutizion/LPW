@@ -69,15 +69,15 @@
         numero2 = Number(document.getElementById("num2").value);
 
         if (document.getElementById("somar").checked){
-            resultado == "O Resultado da soma foi: " + (numero1+numero2) + " !!!"
+            resultado = "O Resultado da soma foi: " + (numero1+numero2) + " !!!"
         
         }
         if (document.getElementById("subtrair").checked){
-            resultado == "O Resultado da subtração foi: " + (numero1-numero2) + " !!!"
+            resultado = "O Resultado da subtração foi: " + (numero1-numero2) + " !!!"
         
         }
         if (document.getElementById("multiplicar").checked){
-            resultado == "O Resultado da  multiplicação foi: " + (numero1*numero2) + " !!!"
+            resultado = "O Resultado da  multiplicação foi: " + (numero1*numero2) + " !!!"
         
         }
         if (document.getElementById("dividir").checked){
@@ -86,7 +86,7 @@
                 document.getElementById("resultado").innerText = "Não existe divisão por zero";
             }
             else{
-                resultado === "O Resultado da divisão foi: " + (numero1/numero2) + " !!!"
+                resultado = "O Resultado da divisão foi: " + (numero1/numero2) + " !!!"
             }
         }
 
