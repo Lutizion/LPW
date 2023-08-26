@@ -18,6 +18,8 @@
     <button onclick="subtrair()">Subtrair</button>
     <button onclick="multiplicar()">Multiplicar</button>
     <button onclick="dividir()">Divisão</button>
+    <input type="checkbox" id="somar" checked>
+    <label for="Pressionar">+</label>
     <p id="resultado"></p>
     <script>
         let numero1; // primeiro número a ser digitado
@@ -72,8 +74,6 @@
             divisao = numero1/numero2 
             document.getElementById("resultado").innerText = "O resultado da divisão foi: " + divisao;
         }
-        
-
         
 
     }
