@@ -49,7 +49,7 @@
         </div>
     </div>
     <button onclick="calcular()">calcular</button>
-    
+    <p id="resultado"></p>
 
 
    <!-- <button onclick="somar()">Somar</button>
@@ -83,12 +83,13 @@
         if (document.getElementById("dividir").checked){
             
             if(numero2 == 0){
-                document.getElementById("resultado").innerText = "Não existe divisão por zero";
+                resultado = "Não existe divisão por zero";
             }
             else{
                 resultado = "O Resultado da divisão foi: " + (numero1/numero2) + " !!!"
             }
         }
+        document.getElementById("resultado").innerHTML = resultado;
 
     }
      /*function subtrair(){
@@ -132,7 +133,7 @@
     }*/
 
     </script>
-    <p id="resultado"></p>
+    
 
 </body>
 </html>
