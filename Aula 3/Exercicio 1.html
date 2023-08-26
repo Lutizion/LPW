@@ -72,10 +72,26 @@
             resultado === "O Resultado da soma foi: " + (numero1+numero2) + " !!!"
         
         }
+        if (document.getElementById("subtrair").checked){
+            resultado === "O Resultado da subtração foi: " + (numero1-numero2) + " !!!"
         
+        }
+        if (document.getElementById("multiplicar").checked){
+            resultado === "O Resultado da  multiplicação foi: " + (numero1*numero2) + " !!!"
+        
+        }
+        if (document.getElementById("divisão").checked){
+            
+            if(numero2 === 0){
+                document.getElementById("resultado").innerText = "Não existe divisão por zero";
+            }
+            else{
+                resultado === "O Resultado da divisão foi: " + (numero1/numero2) + " !!!"
+            }
+        }
 
     }
-    function subtrair(){
+     /*function subtrair(){
         let subtrair; // resultado da subtração dos números digitado
 
         numero1 = Number(document.getElementById("num1").value);
@@ -113,7 +129,7 @@
         }
         
 
-    }
+    }/*
 
     </script>
     <p id="resultado"></p>
