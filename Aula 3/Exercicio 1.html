@@ -63,13 +63,16 @@
         
     function calcular(){
         
-        let soma; // resultado da soma dos números digitado
+        let resultado; // resultado da soma dos números digitado
 
         numero1 = Number(document.getElementById("num1").value);
         numero2 = Number(document.getElementById("num2").value);
 
-
-        document.getElementById("somar").innerText = "O resultado da soma foi: " + (numero1+numero2);
+        if (document.getElementById("somar").checked){
+            resultado === "O Resultado da soma foi: " + (numero1+numero2) + " !!!"
+        
+        }
+        
 
     }
     function subtrair(){
