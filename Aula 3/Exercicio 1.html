@@ -56,19 +56,19 @@
         numero1 = Number(document.getElementById("num1").value);
         numero2 = Number(document.getElementById("num2").value);
 
-        if (document.getElementById("somar")){
+        if (document.getElementById("somar").checked){
             resultado = "O Resultado da soma foi: " + (numero1+numero2) + " !!!"
         
         }
-        if (document.getElementById("subtrair")){
+        if (document.getElementById("subtrair").checked){
             resultado = "O Resultado da subtração foi: " + (numero1-numero2) + " !!!"
         
         }
-        if (document.getElementById("multiplicar")){
+        if (document.getElementById("multiplicar").checked){
             resultado = "O Resultado da  multiplicação foi: " + (numero1*numero2) + " !!!"
         
         }
-        if (document.getElementById("dividir")){
+        if (document.getElementById("dividir").checked){
             
             if(numero2 == 0){
                 resultado = "Não existe divisão por zero";
