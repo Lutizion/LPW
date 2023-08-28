@@ -73,29 +73,29 @@
             if (check[i].checked) {
 
         
-        if (document.getElementById("somar").checked){
-            resultado = "O Resultado da soma foi: " + (numero1+numero2) + " !!!"
+                if (document.getElementById("somar").checked){
+                    resultado = "O Resultado da soma foi: " + (numero1+numero2) + " !!!"
         
-        }
-        if (document.getElementById("subtrair").checked){
-            resultado = "O Resultado da subtração foi: " + (numero1-numero2) + " !!!"
+                }
+                if (document.getElementById("subtrair").checked){
+                    resultado = "O Resultado da subtração foi: " + (numero1-numero2) + " !!!"
         
-        }
-        if (document.getElementById("multiplicar").checked){
-            resultado = "O Resultado da  multiplicação foi: " + (numero1*numero2) + " !!!"
+                }
+                if (document.getElementById("multiplicar").checked){
+                    resultado = "O Resultado da  multiplicação foi: " + (numero1*numero2) + " !!!"
         
-        }
-        if (document.getElementById("dividir").checked){
+                }
+                if (document.getElementById("dividir").checked){
             
-            if(numero2 == 0){
-                resultado = "Não existe divisão por zero";
-            }
-            else{
-                resultado = "O Resultado da divisão foi: " + (numero1/numero2) + " !!!"
+                    if(numero2 == 0){
+                        resultado = "Não existe divisão por zero";
+                    }
+                    else{
+                        resultado = "O Resultado da divisão foi: " + (numero1/numero2) + " !!!"
+                    }
+                }
             }
         }
-    }
-}
         document.getElementById("resultado").innerHTML = resultado;
 
     }
