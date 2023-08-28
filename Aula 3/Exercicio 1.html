@@ -29,19 +29,19 @@
 
     <div class="grupo-radio">
         <div>
-            <input type="radio" id="somar">
+            <input type="radio" id="somar" name="botao">
             <label for="somar">+</label>
         </div>
         <div>
-            <input type="radio" id="subtrair">
+            <input type="radio" id="subtrair" name="botao">
             <label for="subtrair">-</label>
         </div>
         <div>
-            <input type="radio" id="multiplicar">
+            <input type="radio" id="multiplicar" name="botao">
             <label for="multiplicar">*</label>
         </div>
         <div>
-            <input type="radio" id="dividir">
+            <input type="radio" id="dividir" name="botao">
             <label for="dividir">/</label>
         </div>
     </div>
@@ -62,9 +62,12 @@
     function calcular(){
         
         let resultado; // resultado da soma dos números digitado
+        let check = document.getElementsByTagName("botao");
 
         numero1 = Number(document.getElementById("num1").value);
         numero2 = Number(document.getElementById("num2").value);
+
+        
 
         if (document.getElementById("somar").checked){
             resultado = "O Resultado da soma foi: " + (numero1+numero2) + " !!!"
