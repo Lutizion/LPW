@@ -69,23 +69,23 @@
 
        
 
-        for (let i = 0  < check.length; i++){
-        if (botao[i].checked){
+        for (let i = 0; i < check.length; i++){
+            if (check[i].checked) {
 
         
-        if (botao[i == 0].document.getElementById("somar").checked){
+        if (document.getElementById("somar").checked){
             resultado = "O Resultado da soma foi: " + (numero1+numero2) + " !!!"
         
         }
-        if (botao[i == 1].document.getElementById("subtrair").checked){
+        if (document.getElementById("subtrair").checked){
             resultado = "O Resultado da subtração foi: " + (numero1-numero2) + " !!!"
         
         }
-        if (botao[i == 2].document.getElementById("multiplicar").checked){
+        if (document.getElementById("multiplicar").checked){
             resultado = "O Resultado da  multiplicação foi: " + (numero1*numero2) + " !!!"
         
         }
-        if (botao[i == 0].document.getElementById("dividir").checked){
+        if (document.getElementById("dividir").checked){
             
             if(numero2 == 0){
                 resultado = "Não existe divisão por zero";
