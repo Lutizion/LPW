@@ -5,11 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <style>
+        .container {
+          display: flex;
+          align-items: center;
+        }
+      
+        .operations {
+          display: flex;
+          flex-direction: column;
+        }
+      </style>
     
 </head>
 <body>
     <h2>Operações matematicas</h2>
     
+    <div class="alinhar">
     <form>
             <label for="fname">Digite o Primeiro Número:</label><br>
             <input type="text" id="num1" name="fname"><br>
@@ -18,7 +30,7 @@
     </form> 
 
     <div>
-        <div>
+        <div class="operacao">
             <input type="radio" id="somar" name="botao">
             <label for="somar">+</label>
         </div>
@@ -34,6 +46,7 @@
             <input type="radio" id="dividir" name="botao">
             <label for="dividir">/</label>
         </div>
+    </div>
     </div>
     
     <button onclick="calcular()">calcular</button>
