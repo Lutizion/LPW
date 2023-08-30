@@ -69,29 +69,30 @@
 
         
                 if (document.getElementById("somar").checked){
-                    "O Resultado da soma foi: " + (numero1+=numero2) + " !!!"
+                    document.getElementById("resultado").innerHTML = "O Resultado da soma foi: " + (numero1+=numero2) + " !!!";
         
                 }
                 if (document.getElementById("subtrair").checked){
-                    "O Resultado da subtração foi: " + (numero1-=numero2) + " !!!"
+                    document.getElementById("resultado").innerHTML = "O Resultado da subtração foi: " + (numero1-=numero2) + " !!!";
         
                 }
                 if (document.getElementById("multiplicar").checked){
-                    "O Resultado da  multiplicação foi: " + (numero1*=numero2) + " !!!"
+                    document.getElementById("resultado").innerHTML = "O Resultado da multiplicação foi: " + (numero1*=numero2) + " !!!";
         
                 }
                 if (document.getElementById("dividir").checked){
             
                     if(numero2 == 0){
-                        "Não existe divisão por zero";
+                        document.getElementById("resultado").innerHTML = "Não existe divisão por zero";
+                        
                     }
                     else{
-                        "O Resultado da divisão foi: " + (numero1/=numero2) + " !!!"
+                        document.getElementById("resultado").innerHTML = "O Resultado da divisão foi: " + (numero1/=numero2) + " !!!";
                     }
                 }
             }
         }
-        document.getElementById("somar").innerHTML = resultado;
+        //document.getElementById("resultado").innerHTML = resultado;
         //document.getElementById("resultado").innerHTML = "num1 é do tipo: " + typeof(numero1) + " / num2 é do tipo: " + typeof(numero2) + " / resultado é: " + typeof(resultado) + " !!!"
 
     }
