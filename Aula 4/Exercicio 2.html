@@ -49,6 +49,7 @@
     <script>
         let numero1; // primeiro número a ser digitado
         let numero2; // segundo número a ser digitado
+        let numero3; // terceiro número a ser digitado
 
         
     function calcular(){
@@ -56,8 +57,9 @@
         let resultado; // resultado da soma dos números digitado
         let check = document.getElementsByName("botao");
 
-        numero1 = Number(document.getElementById("num1").value);
+        numero1 = String(document.getElementById("num1").value);
         numero2 = Number(document.getElementById("num2").value);
+        numero3 = 10;
 
         
 
@@ -66,7 +68,7 @@
 
         
                 if (document.getElementById("somar").checked){
-                    resultado = "O Resultado da soma foi: " + (numero1+numero2) + " !!!"
+                    resultado = "O Resultado da soma foi: " + (numero1+numero2+numero3) + " !!!"
         
                 }
                 if (document.getElementById("subtrair").checked){
@@ -92,6 +94,9 @@
         //document.getElementById("resultado").innerHTML = "num1 é do tipo: " + typeof(numero1) + " e o num2 é do tipo: " + typeof(numero2) + " e o resultado é: " + typeof(resultado) + " !!!"
 
     }
+
+
+
     /*function subtrair(){
         let subtrair; // resultado da subtração dos números digitado
 
