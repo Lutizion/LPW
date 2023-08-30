@@ -57,10 +57,11 @@
         let resultado; // resultado da soma dos números digitado
         let check = document.getElementsByName("botao");
 
-        numero1 = String(document.getElementById("num1").value);
+        numero1 = Number(document.getElementById("num1").value);
         numero2 = Number(document.getElementById("num2").value);
         numero3 = 10;
 
+    
         
 
         for (let i = 0; i < check.length; i++){
@@ -68,7 +69,7 @@
 
         
                 if (document.getElementById("somar").checked){
-                    resultado = "O Resultado da soma foi: " + (numero3+numero2+numero1) + " !!!"
+                    resultado = "O Resultado da soma foi: " + (numero1+=numero2) + " !!!"
         
                 }
                 if (document.getElementById("subtrair").checked){
