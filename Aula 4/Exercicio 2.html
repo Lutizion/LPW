@@ -56,8 +56,8 @@
         let resultado; // resultado da soma dos números digitado
         let check = document.getElementsByName("botao");
 
-        numero1 = String(document.getElementById("num1").value);
-        numero2 = document.getElementById("num2").value;
+        numero1 = Number(document.getElementById("num1").value);
+        numero2 = Number(document.getElementById("num2").value);
 
         
 
@@ -91,6 +91,7 @@
             }
         }
         document.getElementById("resultado").innerHTML = typeof(resultado);
+        document.getElementById("resultado").innerHTML = "num1 é do tipo: " + typeof(num1) + " e o num2 é do tipo: " + typeof(num2) + " !!!"
 
     }
     /*function subtrair(){
