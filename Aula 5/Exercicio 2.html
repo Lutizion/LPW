@@ -13,7 +13,7 @@
     <button onclick="exibirWP()">Exibir com while par</button><br><br>
     <script>
         let num = "";
-            i = 1;
+        i = 1;
         //exercicio 1
         function exibirW(){
             
@@ -35,9 +35,10 @@
         function exibirWP(){
             while(i<11){
                 if(i%2==0){
-                num += document.getElementById("resultado").innerHTML = "Número: " + i + " !!! <br>";
-                i++
+                    num += document.getElementById("resultado").innerHTML = "Número: " + i + " !!! <br>";
+                    
                 }
+                i++
             }
             document.getElementById("resultado").innerHTML = num;
         }
