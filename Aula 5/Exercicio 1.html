@@ -21,16 +21,17 @@
     <script>
         //exercicio 1
         function verificar(){
-            /*if(document.getElementById("nome").value.substr(0, 1) == ("a" || "A")){
+            if(document.getElementById("nome").value.substr(0, 1).toUpperCase == ("A")){
                 document.getElementById("resultado").innerHTML = "O nome começa com a letra A";
             }
             else{
                 document.getElementById("resultado").innerHTML = "O nome não começa com a letra A";
-            }*/
+            }
 
-            let teste = document.getElementById("nome").value.substr(0, 1);
-            teste = teste.toUpperCase();
-            document.getElementById("resultado").innerHTML = teste;
+            /*let teste = document.getElementById("nome").value.substr(0, 1);
+            teste = teste.toUpperCase() == "A";
+
+            document.getElementById("resultado").innerHTML = teste;*/
         }
         
         //Exercício 3 da aula
