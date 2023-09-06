@@ -10,7 +10,7 @@
 
     <form>
         <label for="lnome">Digite seu nome: </label><br>
-        <input type="text" id="nome" name="lnome">
+        <input type="text" id="nome" name="lnome"><br>
         <label for="lidade">Digite sua idade: </label><br>
         <input type="text" id="idade" name="lidade"><br>
     </form>
@@ -41,9 +41,9 @@
             palavraInvertida += palavra[i];            
           }
           if (palavra === palavraInvertida) {
-            document.getElementById("result").innerText = "A palavra é um palíndromo";
+            document.getElementById("resultado").innerText = "A palavra é um palíndromo";
           } else {
-            document.getElementById("result").innerText = "A palavra não é um palíndromo";
+            document.getElementById("resultado").innerText = "A palavra não é um palíndromo";
           }
         }
 
