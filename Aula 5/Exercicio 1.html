@@ -6,6 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form>
+        <label for="lnome">Digite seu nome: </label><br>
+        <input type="text" id="nome" name="lnome"><br>
+        <label for="lidade">Digite sua idade: </label><br>
+        <input type="text" id="idade" name="lidade"><br>
+    </form>
+
+    <p id="resultado"></p>
+
+    <script>
+        if(document.getElementById(idade)>=18){
+            document.getElementById("resultado").innerHTML = "Você é maior de idade !!!";
+        }
+        else{
+            document.getElementById("resultado").innerHTML = "Vc é menor de idade !!!";
+        }
+
+
+    </script>
+
 </body>
 </html>
