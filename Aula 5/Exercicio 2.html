@@ -8,15 +8,25 @@
 </head>
 <body>
     <p id="resultado"></p>
-    <button onclick="exibirW()">Exibir</button><br><br>
+    <button onclick="exibirW()">Exibir com while</button><br><br>
+    <button onclick="exibirF()">Exibir com for</button><br><br>
     <script>
-        function exibirW(){
-            let num = "";
+        let num = "";
             i = 1;
+        //exercicio 1
+        function exibirW(){
+            
             while(i<11){
                 num += document.getElementById("resultado").innerHTML = "Número: " + i + " !!! <br>";
                 i++
                 
+            }
+            document.getElementById("resultado").innerHTML = num;
+        }
+
+        function exibirF(){
+            for (let i = palavra.length; i < 11; i++){
+                num += document.getElementById("resultado").innerHTML = "Número: " + i + " !!! <br>";
             }
             document.getElementById("resultado").innerHTML = num;
         }
