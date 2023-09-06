@@ -35,12 +35,12 @@
         //exercicio 2 
         function comparar(){
             palavra = document.getElementById("nome").toUpperCase();
-            let NomeInvertido = "";
+            let nomeInvertido = "";
 
             for (let i = palavra.length - 1; i >=0; i--) {
-            palavraInvertida += palavra[i];            
+            nomeInvertida += palavra[i];            
           }
-          if (palavra === palavraInvertida) {
+          if (palavra === nomeInvertida) {
             document.getElementById("resultado").innerText = "A palavra é um palíndromo";
           } else {
             document.getElementById("resultado").innerText = "A palavra não é um palíndromo";
