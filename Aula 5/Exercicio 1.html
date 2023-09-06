@@ -10,12 +10,14 @@
 
     <form>
         <label for="lnome">Digite seu nome: </label><br>
-        <input type="text" id="nome" name="lnome"><br>
+        <input type="text" id="nome" name="lnome">
         <label for="lidade">Digite sua idade: </label><br>
-        <input type="text" id="idade" name="lidade"><br><br>
+        <input type="text" id="idade" name="lidade"><br>
     </form>
     <button onclick="mostrar()">Confirmar</button><br><br>
+    <button onclick="comparar()">Comparar</button><br><br>
     <button onclick="verificar()">Verificar</button><br><br>
+    
     <p id="resultado"></p>
 
     <script>
@@ -30,8 +32,25 @@
                 
             }
 
-            
+        //exercicio 2 
+        function comparar(){
+            palavra = document.getElementById("nome").toUpperCase();
+            let NomeInvertido = "";
+
+            for (let i = palavra.length - 1; i >=0; i--) {
+            palavraInvertida += palavra[i];            
+          }
+          if (palavra === palavraInvertida) {
+            document.getElementById("result").innerText = "A palavra é um palíndromo";
+          } else {
+            document.getElementById("result").innerText = "A palavra não é um palíndromo";
+          }
+        }
+
         
+
+
+
         
         //Exercício 3 da aula
         function mostrar(){
