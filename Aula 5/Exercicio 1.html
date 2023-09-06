@@ -7,25 +7,42 @@
 </head>
 <body>
     <h1>Formulário</h1>
+
     <form>
         <label for="lnome">Digite seu nome: </label><br>
         <input type="text" id="nome" name="lnome"><br>
         <label for="lidade">Digite sua idade: </label><br>
-        <input type="text" id="idade" name="lidade"><br>
+        <input type="text" id="idade" name="lidade"><br><br>
     </form>
     <button onclick="mostrar()">Confirmar</button><br>
+    <button onclick="verificar()">Verificar</button><br>
     <p id="resultado"></p>
 
     <script>
-        
+        //exercicio 1
+        function verificar(){
+            if(document.getElementById("nome").substr(0, 1) == "a" || "A"){
+                document.getElementById("resultado").innerHTML = "O nome começa com a letra A";
+            }
+            else{
+                document.getElementById("resultado").innerHTML = "O nome não começa com a letra A";
+            }
 
+
+
+        }
+        
+        //Exercício 3 da aula
         function mostrar(){
         if(document.getElementById("idade").value>=18){
             document.getElementById("resultado").innerHTML = "Você é maior de idade !!!";
         }
         else{
-            document.getElementById("resultado").innerHTML = "Vc é menor de idade !!!";
+            document.getElementById("resultado").innerHTML = "Você é menor de idade !!!";
         }
+
+
+
     }
 
     </script>
