@@ -14,14 +14,14 @@
     <p id="resultado"></p>
 
     <script>
-        let num1 = Number(document.getElementById("numero1").value);
-        function factorial(num1){
+        let num = Number(document.getElementById("numero1").value);
+        function factorial(num){
 
-            if (num1<= 1){
+            if (num<= 1){
                 document.getElementById("resultado").innerHTML = 1; 
             } 
             else{
-                document.getElementById("resultado").innerHTML = num1*factorial(num1-1);
+                document.getElementById("resultado").innerHTML = num*factorial(num-1);
 
             }
             
