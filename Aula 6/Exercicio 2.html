@@ -8,16 +8,15 @@
 <body>
     <h1>Exercício 1</h1>
     
-    <h4>Média aritmética</h4>
+    <h4>Factorial</h4>
     Digite um número:<input id="numero1" type="number" name="num"><br/>
     <button onclick="factorial()">Calcular</button><br><br>
     <p id="resultado"></p>
 
     <script>
-        
-        function factorial(){
+        let num1 = Number(document.getElementById("numero1").value);
+        function factorial(num1){
 
-            let num1 = Number(document.getElementById("numero1").value);
             if (num1<= 1){
                 document.getElementById("resultado").innerHTML = 1; 
             } 
