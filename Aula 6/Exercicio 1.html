@@ -12,16 +12,32 @@
     Primeira número:<input id="numero1" type="number"><br/>
     Segundo  número:<input id="numero2" type="number"><br/>
     Terceiro número:<input id="numero3" type="number"><br/>
+    Quarto número:<input id="numero4" type="number"><br/>
+    Quinto número:<input id="numero5" type="number"><br/>
     <button onclick="CalcularMedia()">Calcular</button><br><br>
     <p id="resultado"></p>
 
     <script>
+        
         function CalcularMedia(){
+
             let num1 = Number(document.getElementById("numero1").value);
             let num2 = Number(document.getElementById("numero2").value);
             let num3 = Number(document.getElementById("numero3").value);
+            let num4 = Number(document.getElementById("numero4").value);
+            let num5 = Number(document.getElementById("numero5").value);
 
-            let media = (num1+num2+num3)/3;
+            soma =0;
+            j = 0;
+            for (let i = 0; i <= arguments.length, i++;){
+                if(arguments[i] += document.getElementByType("number")){
+                    
+                    soma += arguments[i]
+                    j++
+                }
+                
+            }
+            let media = soma/j;
             document.getElementById("resultado").innerHTML = media;
         }
 
