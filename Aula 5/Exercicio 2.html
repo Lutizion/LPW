@@ -48,10 +48,12 @@
         }
 
         function exibirFP(){
-            for (let i = 1; i <= 20; i++){
-                if(i%2==0){
+            for (let i = 1; i <= 20;){
+                if(j%2==0){
                 num += document.getElementById("resultado").innerHTML = "Número: " + i + " !!! <br>";
+                i++;
                 }
+                j++;
             }
             document.getElementById("resultado").innerHTML = num;
         }
