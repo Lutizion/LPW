@@ -30,15 +30,15 @@
         }
 
         function exibirF(){
-            for (let i = 1; i <= 0; i++){
+            for (let i = 1; i <= 10; i++){
                 num += document.getElementById("resultado").innerHTML = "Número: " + i + " !!! <br>";
             }
             document.getElementById("resultado").innerHTML = num;
         }
-
+        //exercicio 2
         function exibirWP(){
             while(i<=10){
-
+                document.getElementById("resultado").innerHTML = "";
                 if(j%2==0){
                     num += document.getElementById("resultado").innerHTML = "Número: " + j + " !!! <br>";
                     i++;
@@ -47,8 +47,9 @@
             }
             document.getElementById("resultado").innerHTML = num;
         }
-
+        
         function exibirFP(){
+            document.getElementById("resultado").innerHTML = "";
             for (let i = 1; i <= 10;){
                 if(j%2==0){
                 num += document.getElementById("resultado").innerHTML = "Número: " + j + " !!! <br>";
@@ -58,6 +59,8 @@
             }
             document.getElementById("resultado").innerHTML = num;
         }
+
+
 
 
     </script>
