@@ -38,17 +38,18 @@
             while(i<11){
                 if(i%2==0){
                     num += document.getElementById("resultado").innerHTML = "Número: " + i + " !!! <br>";
-                    
+                    i++
                 }
-                i++
+                
             }
             document.getElementById("resultado").innerHTML = num;
         }
 
         function exibirFP(){
-            for (let i = 1; i < 11; i++){
+            for (let i = 1; i < 11;){
                 if(i%2==0){
                 num += document.getElementById("resultado").innerHTML = "Número: " + i + " !!! <br>";
+                i++
                 }
             }
             document.getElementById("resultado").innerHTML = num;
