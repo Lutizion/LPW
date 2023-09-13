@@ -17,8 +17,15 @@
         
         function factorial(){
 
-            if (document.getElementById("numero1")<= 1) return 1;
-            return document.getElementById("numero1")*factorial(x-1);
+            let num1 = Number(document.getElementById("numero1").value);
+            if (num1<= 1){
+                document.getElementById("resultado").innerHTML = 1; 
+            } 
+            else{
+                document.getElementById("resultado").innerHTML = num1*factorial(num1-1);
+
+            }
+            
             
         }
 
