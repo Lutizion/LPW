@@ -9,11 +9,11 @@
     <h1>Exercício 1</h1>
     
     <h4>Média aritmética</h4>
-    Primeira número:<input id="numero1" type="number"><br/>
-    Segundo  número:<input id="numero2" type="number"><br/>
-    Terceiro número:<input id="numero3" type="number"><br/>
-    Quarto número:<input id="numero4" type="number"><br/>
-    Quinto número:<input id="numero5" type="number"><br/>
+    Primeira número:<input id="numero1" name ="num" type="number"><br/>
+    Segundo  número:<input id="numero2" name ="num" type="number"><br/>
+    Terceiro número:<input id="numero3" name ="num" type="number"><br/>
+    Quarto número:<input id="numero4" name ="num" type="number"><br/>
+    Quinto número:<input id="numero5" name ="num" type="number"><br/>
     <button onclick="CalcularMedia()">Calcular</button><br><br>
     <p id="resultado"></p>
 
@@ -21,11 +21,11 @@
         
 
             function CalcularMedia() {
-            let soma = Number(document.getElementById("numero").value);
+            let soma = Number(document.getElementsByName("num").value);
             conta = 0;
            
             for(let i = 0; i < arguments.length; i++){
-                if (arguments[i] >= 0){
+                if (arguments[i] > 0){
                     soma += arguments[i];
                     conta++;
                 } 
