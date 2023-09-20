@@ -14,7 +14,7 @@
     Terceiro número:<input id="numero3" type="number"><br/>
     Quarto número:<input id="numero4" type="number"><br/>
     Quinto número:<input id="numero5" type="number"><br/>
-    <button onclick="CalcularMedia()">Calcular</button><br><br>
+    <button onclick="CalcularMedia(1,2,3)">Calcular</button><br><br>
     <p id="resultado"></p>
 
     <script>
@@ -32,7 +32,7 @@
             media = soma / conta;
             return media;
 
-            document.getElementById("resultado").innerText = "Média = " + media;
+            document.getElementById("resultado").innerText = "A média desses três números é: " + media;
         }
         
 
