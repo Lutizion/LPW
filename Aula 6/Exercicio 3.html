@@ -9,12 +9,12 @@
     <h1>Exercício 1</h1>
     
     <h4>Média aritmética</h4>
-    Primeira número:<input id="numero1" name ="num" type="number"><br/>
-    Segundo  número:<input id="numero2" name ="num" type="number"><br/>
-    Terceiro número:<input id="numero3" name ="num" type="number"><br/>
-    Quarto número:<input id="numero4" name ="num" type="number"><br/>
-    Quinto número:<input id="numero5" name ="num" type="number"><br/>
-    <button onclick="CalcularMedia(Number(document.getElementById('numero1').value),
+    Primeiro número: <br/><input id="numero1" name ="num" type="number">
+    Segundo  número: <input id="numero2" name ="num" type="number"><br/>
+    Terceiro número: <input id="numero3" name ="num" type="number"><br/>
+    Quarto número: <input id="numero4" name ="num" type="number"><br/>
+    Quinto número: <input id="numero5" name ="num" type="number"><br/>
+    <button onclick="CalcularMedia( Number(document.getElementById('numero1').value),
                                     Number(document.getElementById('numero2').value),
                                     Number(document.getElementById('numero3').value),
                                     Number(document.getElementById('numero4').value),
@@ -34,7 +34,7 @@
                     cont++;
                 } 
             }
-            media = soma / cont;
+            media = soma/cont;
 
             document.getElementById("resultado").innerText = "A média dos números é: " + media;
         }
