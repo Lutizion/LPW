@@ -14,14 +14,18 @@
     Terceiro número:<input id="numero3" name ="num" type="number"><br/>
     Quarto número:<input id="numero4" name ="num" type="number"><br/>
     Quinto número:<input id="numero5" name ="num" type="number"><br/>
-    <button onclick="CalcularMedia()">Calcular</button><br><br>
+    <button onclick="CalcularMedia(Number(document.getElementById('numero1'),
+                                    Number(document.getElementById('numero2')),
+                                    Number(document.getElementById('numero3')),
+                                    Number(document.getElementById('numero4')),
+                                    Number(document.getElementById('numero5')),
+                                    ))">Calcular</button><br><br>
     <p id="resultado"></p>
 
     <script>
-        
 
             function CalcularMedia() {
-            let soma = Number(document.getElementsByName("num").value);
+            let soma = 0;
             conta = 0;
            
             for(let i = 0; i < arguments.length; i++){
