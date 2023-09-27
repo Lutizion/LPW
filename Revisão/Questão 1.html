@@ -10,7 +10,7 @@
     
     <h4>Calculo do IMC</h4>
     Qual é o seu peso? <input id="peso" type="number"> kg<br/>
-    Qual é a sua altura? <input id="altura" type="number"> M <br/>
+    Qual é a sua altura? <input id="altura" type="number"> m <br/>
     
     <button onclick="CalcularIMC()">Calcular</button><br><br>
     <p id="resultado"></p>
@@ -38,7 +38,7 @@
             if(imc>=35 && imc <= 39.99 ){
                 document.getElementById("resultado").innerText = "Obesidade II (Severa)";
             }
-            else{
+            if (imc >= 40){
                 document.getElementById("resultado").innerText = "Obesidade III (Mórbida)"
             }
         }
