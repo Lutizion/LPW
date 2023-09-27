@@ -9,13 +9,13 @@
     <h4>Verificar se a palavra é um palíndromo</h4>
     Digite uma palavra: <input id="palavra" type="caracter"><br/>
     
-    <button onclick="Verificar()">Verificar</button><br><br>
+    <button onclick="Verificar( palavra1 = document.getElementById('palavra').value.toUpperCase())">Verificar</button><br><br>
     <p id="resultado"></p>
 </head>
 <body>
     <script>
         function Verificar(){
-            let palavra1 = document.getElementById("palavra").value.toUpperCase();
+            
             let nomeInvertido = "";
 
             for (let i = palavra.length - 1; i >=0; i--) {
