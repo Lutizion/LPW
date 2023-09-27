@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <h4>Verificar a média do aluno</h4>
+    Digite o Nome do Aluno: <input id="nome" type="caracter"><br/>
+    Digite a 1º nota: <input id="nota1" type="number"><br/>
+    Digite a 2º nota: <input id="nota2" type="number"><br/>
+    Digite a 3º nota: <input id="nota3" type="number"><br/>
+    <button onclick="MédiaAluno(nome1 = document.getElementById('nome').value,
+                                nota1 = document.getElementById('nota'),
+                                nota2 = document.getElementById('nota2'),
+                                nota3 = document.getElementById('nota3'),)">Verificar</button><br><br>
+    <p id="resultado"></p>
+</head>
+<body>
+    <script>
+      function MédiaAluno(){
+        media = (nota1+nota2+nota3)/3;
+        if (media >=90){
+            document.getElementById("resultado").innerText = "Aprovado com Honras!";
+        }
+        else if (media >=70 && media <90){
+            document.getElementById("resultado").innerText = "Aprovado com Boas Notas!";
+        }
+        else if (media >50 && media <70){
+            document.getElementById("resultado").innerText = "Aprovado!";
+        }
+        else{
+            document.getElementById("resultado").innerText = "Reprovado!";
+
+        }
+
+    }  
+    </script>
+    
+    
+</body>
+</html>
