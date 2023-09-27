@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <h1>Questão 2</h1>
+    
+    <h4>Verificar se o Ano é Bissexto</h4>
+    Digite um ano no formato AAAA? <input id="ano" type="number"> kg<br/>
+    
+    <button onclick="Verificar()">Verificar</button><br><br>
+    <p id="resultado"></p>
+</head>
+<body>
+    <script>
+        ano1 = Number(document.getElementById('ano').value);
+        function Verificar(ano1){
+            if ((ano1%400 == 0) || (ano%4==0 && ano%100!=0)){
+                document.getElementById("resultado").innerText = "O Ano em questão é Bissexto!";
+            }
+            else{
+                document.getElementById("resultado").innerText = "O Ano em questão não é Bissexto!";
+            }
+        }
+    </script>
+    
+</body>
+</html>
