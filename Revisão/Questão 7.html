@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Questão 7</h1>
+    
+    <h4>String Invertida</h4>
+    Digite uma palavra: <input id="palavra" type="caracter"><br/>
+    
+    <button onclick="Inverter(palavra1 = document.getElementById('palavra').value.toUpperCase())">Inverter</button><br><br>
+    <p id="resultado"></p>
+</head>
+<body>
+    <script>
+        function Verificar(){
+            
+            let nomeinvertido = "";
+
+            for (let i = palavra1.length - 1; i >=0; i--) {
+            nomeinvertido += palavra1[i];            
+            }
+            
+            document.getElementById("resultado").innerHTML = "A palavra ficará: "+ nomeinvertido;
+             
+            
+        }
+            
+        
+
+
+    </script>
+    
+</body>
+</html>
