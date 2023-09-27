@@ -23,7 +23,11 @@
 <body>
     <script>
         function MostrarPar(){
-            if (num1%2==0){
+            while(document.getElementsByName("numer")%2==0){
+                document.getElementById("resultado").innerText= document.getElementsByName("numer")
+            }
+
+            /*if (num1%2==0){
                 document.getElementById("resultado").innerText = num1;
             }
             if(num2%2==0){
@@ -37,7 +41,7 @@
             }
             if(num5%2==0){
                 document.getElementById("resultado").innerText = num5;
-            }
+            }*/
         }
         
     </script>
