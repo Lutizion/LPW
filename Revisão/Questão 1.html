@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercício 1</h1>
+    
+    <h4>Média aritmética</h4>
+    Qual é o seu peso? <input id="peso" type="number"> KG! <br/>
+    Qual é a sua altura? <input id="altura" type="number"> M! <br/>
+    
+    <button onclick="CalcularIMC()">Calcular</button><br><br>
+    <p id="resultado"></p>
+</body>
+    <script>
+        function CalcularIMC(){
+            peso1 = Number(document.getElementById('peso').value),
+            altura1 = Number(document.getElementById('altura').value)
+            Imc = peso1 (altura1 * altura1)
+            if (imc <17){
+                document.getElementById("resultado").innerText = "Muito Abaixo do Peso";
+            }
+            if (imc >= 17 && imc <=18.49){
+                document.getElementById("resultado").innerText = "Abaixo do Peso";
+            }
+            if(imc>=18.5 && imc <= 24.99 ){
+                document.getElementById("resultado").innerText = "Peso Normal";
+            }
+            if(imc>=25 && imc <= 29.99 ){
+                document.getElementById("resultado").innerText = "Acima do Peso";
+            }
+            if(imc>=30 && imc <= 34.99 ){
+                document.getElementById("resultado").innerText = "Obesidade I";
+            }
+            if(imc>=35 && imc <= 39.99 ){
+                document.getElementById("resultado").innerText = "Obesidade II (Severa)";
+            }
+            else{
+                document.getElementById("resultado").innerText = "Obesidade III (Mórbida)"
+            }
+        }
+
+
+
+
+    </script>
+</html>
