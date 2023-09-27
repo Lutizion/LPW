@@ -10,19 +10,19 @@
     
     <h4>Factorial</h4>
     Digite um número:<input id="numero1" type="number" name="num"><br/>
-    <button onclick="factorial()">Calcular</button><br><br><br>
+    <button onclick="fatorial()">Calcular</button><br><br><br>
     <p id="resultado"></p>
 
     <script>
         
-        function factorial(){
+        function fatorial(){
             num = Number(document.getElementById('numero1').value)
 
             if (num<= 1){
                 document.getElementById("resultado").innerHTML = 1; 
             } 
             else{
-                document.getElementById("resultado").innerHTML = num*factorial(num-1);
+                document.getElementById("resultado").innerHTML = num*fatorial(num-1);
 
             }
             
