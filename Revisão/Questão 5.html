@@ -18,11 +18,11 @@
         function Somar(){
             while(cont<=100){
                 cont++;
-                soma+=cont;
+                soma = soma+cont;
             }
-            
+            document.getElementById("resultado").innerText = "A soma deu " + soma;
         }
-        document.getElementById("resultado").innerText = "A soma deu " + soma;
+        
     </script>
     
 </body>
