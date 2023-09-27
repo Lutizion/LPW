@@ -7,11 +7,11 @@
     <h1>Questão 8</h1>
     
     <h4>Mostrar penas os números pares</h4>
-    Digite 1º número? <input id="num1" type="number"><br/>
-    Digite 2º número? <input id="num2" type="number"><br/>
-    Digite 3º número? <input id="num3" type="number"><br/>
-    Digite 4º número? <input id="num4" type="number"><br/>
-    Digite 5º número? <input id="num5" type="number"><br/>
+    Digite 1º número: <input id="num1" type="number"><br/>
+    Digite 2º número: <input id="num2" type="number"><br/>
+    Digite 3º número: <input id="num3" type="number"><br/>
+    Digite 4º número: <input id="num4" type="number"><br/>
+    Digite 5º número: <input id="num5" type="number"><br/>
     
     <button onclick="MostrarPar(num1 = Number(document.getElementById('num1').value),
                             num2 = Number(document.getElementById('num2').value),
@@ -26,16 +26,16 @@
             if (num1%2==0){
                 document.getElementById("resultado").innerText = num1;
             }
-            else if(num2%2==0){
+            if(num2%2==0){
                 document.getElementById("resultado").innerText = num2;
             }
-            else if(num3%2==0){
+            if(num3%2==0){
                 document.getElementById("resultado").innerText = num3;
             }
-            else if(num4%2==0){
+            if(num4%2==0){
                 document.getElementById("resultado").innerText = num4;
             }
-            else if(num5%2==0){
+            if(num5%2==0){
                 document.getElementById("resultado").innerText = num5;
             }
         }
