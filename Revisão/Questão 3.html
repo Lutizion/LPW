@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Questão 3</h1>
+    
+    <h4>Verificar se a palavra é um palíndromo</h4>
+    Digite uma palavra: <input id="palavra" type="caracter"><br/>
+    
+    <button onclick="Verificar()">Verificar</button><br><br>
+    <p id="resultado"></p>
+</head>
+<body>
+    <script>
+            let palavra1 = document.getElementById("palavra").value.toUpperCase();
+            let nomeInvertido = "";
+
+            for (let i = palavra.length - 1; i >=0; i--) {
+            nomeInvertido += palavra[i];            
+            }
+            if (palavra === nomeInvertido) {
+            document.getElementById("resultado").innerHTML = "A palavra é um palíndromo";
+            } else {
+            document.getElementById("resultado").innerHTML = "A palavra não é um palíndromo";
+          }
+        
+
+
+    </script>
+    
+</body>
+</html>
