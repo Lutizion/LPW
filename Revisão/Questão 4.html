@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <h1>Questão 4</h1>
 
     <h4>Verificar a média do aluno</h4>
     Digite o Nome do Aluno: <input id="nome" type="caracter"><br/>
@@ -11,9 +12,9 @@
     Digite a 2º nota: <input id="nota2" type="number"><br/>
     Digite a 3º nota: <input id="nota3" type="number"><br/>
     <button onclick="MediaAluno(nome1 = document.getElementById('nome'),
-                                not1 = Number(document.getElementById('nota1')).value,
-                                not2 = Number(document.getElementById('nota2')).value,
-                                not3 = Number(document.getElementById('nota3')).value)">Verificar</button><br><br>
+                                not1 = Number(document.getElementById('nota1').value),
+                                not2 = Number(document.getElementById('nota2').value),
+                                not3 = Number(document.getElementById('nota3').value))">Verificar</button><br><br>
     <p id="resultado"></p>
 </head>
 <body>
