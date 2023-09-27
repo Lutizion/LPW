@@ -10,7 +10,7 @@
     Digite a 1º nota: <input id="nota1" type="number"><br/>
     Digite a 2º nota: <input id="nota2" type="number"><br/>
     Digite a 3º nota: <input id="nota3" type="number"><br/>
-    <button onclick="MédiaAluno(nome1 = document.getElementById('nome').value,
+    <button onclick="MediaAluno(nome1 = document.getElementById('nome').value,
                                 nota1 = document.getElementById('nota'),
                                 nota2 = document.getElementById('nota2'),
                                 nota3 = document.getElementById('nota3'),)">Verificar</button><br><br>
@@ -18,7 +18,7 @@
 </head>
 <body>
     <script>
-      function MédiaAluno(){
+      function MediaAluno(){
         media = (nota1+nota2+nota3)/3;
         if (media >=90){
             document.getElementById("resultado").innerText = "Aprovado com Honras!";
