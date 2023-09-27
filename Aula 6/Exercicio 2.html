@@ -10,12 +10,13 @@
     
     <h4>Factorial</h4>
     Digite um número:<input id="numero1" type="number" name="num"><br/>
-    <button onclick="factorial(num = Number(document.getElementById('numero1').value))">Calcular</button><br><br><br>
+    <button onclick="factorial()">Calcular</button><br><br><br>
     <p id="resultado"></p>
 
     <script>
         
         function factorial(){
+            num = Number(document.getElementById('numero1').value)
 
             if (num<= 1){
                 document.getElementById("resultado").innerHTML = 1; 
