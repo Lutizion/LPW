@@ -17,11 +17,11 @@
     <script>
         ano1 = Number(document.getElementById("ano").value);
         function Verificar(){
-            if ((ano1%400 == 0) || (ano1%4==0 && ano1%100!=0)){
-                document.getElementById("resultado").innerText = "O Ano em questão é Bissexto!";
+            if ((ano1%400 == 0) && (ano1%4==0 && ano1%100!=0)){
+                document.getElementById("resultado").innerText = "O ano em questão é Bissexto!";
             }
             else{
-                document.getElementById("resultado").innerText = "O Ano em questão não é Bissexto!";
+                document.getElementById("resultado").innerText = "O ano em questão não é Bissexto!";
             }
         }
     </script>
