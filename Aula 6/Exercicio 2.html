@@ -20,8 +20,9 @@
             if (num<= 1){
                 document.getElementById("resultado").innerHTML = 1; 
             } 
-            else{
-                document.getElementById("resultado").innerHTML = factorial(num-1);
+            else
+            while(num>1){
+                document.getElementById("resultado").innerHTML = num*factorial(num-1);
 
             }
             
