@@ -16,22 +16,21 @@
     <script>
         
         function fatorial(){
-            
+            result =0;
             while(num >=1){
                 if (num=1){
-                document.getElementById("resultado").innerHTML = 1; 
+                    //document.getElementById("resultado").innerHTML = 1; 
+                    result *= num;
                 break;
-            } 
-            else{
-                document.getElementById("resultado").innerHTML = num*fatorial(num-1);
+                } 
+                else{
+                    //document.getElementById("resultado").innerHTML = num*fatorial(num-1);
+                    result = num*fatorial(num-1);
+                }
                 num--;
             }
-            
+            document.getElementById("resultado").innerHTML = result;
             }
-            
-            
-            
-        }
 
         
 
