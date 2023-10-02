@@ -17,14 +17,10 @@
         
         function fatorial(){
             result = 1;
-            if (num=1){
-                    //document.getElementById("resultado").innerHTML = 1; 
-                    result = num;
-                
-                }
+            
             while(num >= 1){
                  
-                    result = num*(fatorial(num-1));
+                    result = result*num;
                     num--;
                 }
                 
