@@ -4,18 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <h1>Questão 6</h1>
-    
-    <h4>Calcular Fatorial</h4>
-    Digite um número? <input id="num" type="number"><br/>
-    
-    <button onclick="Fatorial(num1 = Number(document.getElementById('num').value))">Calcular</button><br><br>
-    <p id="resultado"></p>
 </head>
 <body>
+    <h1>Exercício 6</h1>
+    
+    <h4>Factorial</h4>
+    Digite um número:<input id="numero1" type="number" name="num"><br/>
+    <button onclick="fatorial(num = Number(document.getElementById('numero1').value))">Calcular</button><br><br><br>
+    <p id="resultado"></p>
+
     <script>
         
+        function fatorial(){
+            result = 1;
+            
+            while(num >= 1){
+                 
+                    result = result*num;
+                    num--;
+                }
+              document.getElementById("resultado").innerHTML = result;  
+            }
+            
+            
+
+        
+
     </script>
-    
+
 </body>
 </html>
