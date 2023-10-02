@@ -24,17 +24,24 @@
     <script>
         
         function MostrarPar(){
-
-            par = [num1, num2, num3, num4, num5];
-
-
+            
             
             document.getElementById("resultado").innerText = "Os números pares são: ";
-
-            if(par.filter(par => par%2==0)){
-                document.getElementById("resultado").innerText = par.join();
+            if (num1%2==0){
+                document.getElementById("resultado").innerText += num1 + "  ";
             }
-           
+            if(num2%2==0){
+                document.getElementById("resultado").innerText += num2  + " ";
+            }
+            if(num3%2==0){
+                document.getElementById("resultado").innerText += num3  + "  ";
+            }
+            if(num4%2==0){
+                document.getElementById("resultado").innerText += num4  + "  ";
+            }
+            if(num5%2==0){
+                document.getElementById("resultado").innerText += num5  + "  ";
+            }
         }
         
     </script>
