@@ -24,24 +24,29 @@
     <script>
         
         function MostrarPar(){
+            let resultado = document.getElementById("resultado");
+
+            for(let numero of [num1, num2, num3, num4, num5]) {
+                if(numero % 2 == 0) 
+                    resultado.innerText += numero + " ";
+            }
             
-            
-            document.getElementById("resultado").innerText = "Os números pares são: ";
-            if (num1%2==0){
-                document.getElementById("resultado").innerText += num1 + " ";
-            }
-            if(num2%2==0){
-                document.getElementById("resultado").innerText += num2  + " ";
-            }
-            if(num3%2==0){
-                document.getElementById("resultado").innerText += num3  + " ";
-            }
-            if(num4%2==0){
-                document.getElementById("resultado").innerText += num4  + " ";
-            }
-            if(num5%2==0){
-                document.getElementById("resultado").innerText += num5  + " ";
-            }
+            // resultado.innerText = "Os números pares são: ";
+            // if (num1%2==0){
+            //     resultado.innerText += num1 + " ";
+            // }
+            // if(num2%2==0){
+            //     resultado.innerText += num2  + " ";
+            // }
+            // if(num3%2==0){
+            //     resultado.innerText += num3  + " ";
+            // }
+            // if(num4%2==0){
+            //     resultado.innerText += num4  + " ";
+            // }
+            // if(num5%2==0){
+            //     resultado.innerText += num5  + " ";
+            // }
         }
         
     </script>
