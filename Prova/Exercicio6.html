@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Exercício 6</h1>
+
+    <h4>Maior e menor número</h4>
+    Primeiro número: <br /><input id="numero1" name="num" type="number"><br />
+    Segundo número: <br /><input id="numero2" name="num" type="number"><br />
+    Terceiro número: <br /><input id="numero3" name="num" type="number"><br />
+    Quarto número: <br /><input id="numero4" name="num" type="number"><br />
+    Quinto número: <br /><input id="numero5" name="num" type="number"><br />
+    <br /><button onclick="MaiorN(
+                                    )">Mostrar</button><br></br>
+    <p id="resultado"></p>
+
+    <script>
+
+        function MaiorN() {
+            resultado = document.getElementById("resultado");
+            num1 = Number(document.getElementById('numero1').value);
+            num2 = Number(document.getElementById('numero2').value);
+            num3 = Number(document.getElementById('numero3').value);
+            num4 = Number(document.getElementById('numero4').value);
+            num5 = Number(document.getElementById('numero5').value);
+            nm = [num1, num2, num3, num4, num5];
+
+
+            nm.sort(function (a, b) {
+                return a - b;
+            })
+
+            menor = nm[0];
+            maior = num[4];
+
+           resultado.innerText = "O maior dos números é: " + maior;
+           resultado.innerText = "O menor dos números é: " + menor;
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
