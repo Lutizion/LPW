@@ -50,7 +50,13 @@
 
                 }
                 if (document.getElementById("dividir").checked) {
-                    resultado.innerHTML= "O resultado da divisão foi: " + (numero1 / numero2);
+                    if(numero2 == 0){
+                        resultado.innerHTML = "Não existe divisão por zero";
+                    
+                    }else{
+                        resultado.innerHTML= "O resultado da divisão foi: " + (numero1 / numero2);
+                    }
+                    
 
                 }
 
