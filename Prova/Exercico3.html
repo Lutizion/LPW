@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Questão 3</h1>
+    
+    <h4>Nome completo</h4>
+    Nome: <input id="nome1" type="caracter"><br/>
+    Nome do meio: <input id="nome2" type="caracter"><br/>
+    Sobrenome <input id="nome3" type="caracter"><br/>
+    
+    <button onclick="MostraNome()">Mostrar</button><br><br>
+    <p id="resultado"></p>
+</body>
+    <script>
+        function MostrarNome(){
+            nome = document.getElementById("nome1");
+            meio = document.getElementById("nome2");
+            sobrenome = document.getElementById("nome3");
+            resultado = document.getElementById("resultado");
+            
+            resultado.innertext = "O nome completo da pessoa é: " + nome + meio + sobrenome;
+            
+        }
+
+
+
+
+    </script>
+</html>
