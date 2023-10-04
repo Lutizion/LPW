@@ -19,27 +19,27 @@
         function Verificar() {
             palavra1 = document.getElementById('palavra').value.toUpperCase();
             resultado = document.getElementById("resultado");
-            vogal = 0;
+            cont = 0;
             for (let i = 0; i < palavra1.length; i++) {
                 let letrav = palavra1[i];
                 if (letrav == 'A') {
-                    vogal++;
+                    cont++;
                 }
                 if (letrav == "E") {
-                    vogal++;
+                    cont++;
                 }
                 if (letrav == "I") {
-                    vogal++;
+                    cont++;
                 }
                 if (letrav == "O") {
-                    vogal++;
+                    cont++;
                 }
                 if (letrav == "U") {
-                    vogal++;
+                    cont++;
                 }
             }
 
-            resultado.innerHTML = "A palavra possui " + vogal + " vogais!!";
+            resultado.innerHTML = "O total de vogais que tem nessa palavra é:  " + cont;
         }
 
 
