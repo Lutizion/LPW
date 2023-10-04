@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <h1>Questão 4</h1>
-    
-    <h4>Palavra é um palíndromo</h4>
-    Digite uma palavra: <input id="palavra" type="caracter"><br/>
-    
-    <button onclick="Verificar(palavra1 = document.getElementById('palavra').value.toUpperCase())">Verificar</button><br><br>
+
+    <h4>Palavra é um palíndromo?</h4>
+    Digite uma palavra: <input id="palavra" type="caracter"><br />
+
+    <button
+        onclick="Verificar()">Verificar</button><br><br>
     <p id="resultado"></p>
 </head>
+
 <body>
     <script>
-        function Verificar(){
-            
+        function Verificar() {
+            palavra1 = document.getElementById('palavra').value.toUpperCase();
             let nomeinvertido = "";
             resultado = document.getElementById("resultado");
-            for (let i = palavra1.length - 1; i >=0; i--) {
-            nomeinvertido += palavra1[i];            
+
+            for (let i = palavra1.length - 1; i >= 0; i--) {
+                nomeinvertido += palavra1[i];
             }
             if (palavra1 === nomeinvertido) {
-            resultado.innerHTML = "A palavra é um palíndromo";
-            } 
+                resultado.innerHTML = "A palavra é um palíndromo";
+            }
             else {
-            resultado.innerHTML = "A palavra não é um palíndromo";
-          }
+                resultado.innerHTML = "A palavra não é um palíndromo";
+            }
         }
-            
-        
+
+
 
 
     </script>
-    
+
 </body>
+
 </html>
