@@ -22,6 +22,8 @@
     <script>
 
         function MaiorN() {
+
+            
             resultado = document.getElementById("resultado");
             num1 = Number(document.getElementById("numero1").value);
             num2 = Number(document.getElementById("numero2").value);
@@ -30,21 +32,16 @@
             num5 = Number(document.getElementById("numero5").value);
             numero = [num1, num2, num3, num4, num5];
 
-
             numero.sort(function (a, b) {
                 return a - b;
-            })
+            });
 
             menor = numero[0];
-            resultado.innerHTML = "O menor dos números é: " + menor;
-            numero.sort(function (a, b) {
-                return b - a;
-            })
-            maior = numero[0];
+            maior = numero[4];
 
-            resultado.innerHTML = "O maior dos números é: " + maior;
-
+            resultado.innerHTML = "O menor dos números é " + menor + " e o maior dos números é: " + maior;
         }
+        
 
 
 
