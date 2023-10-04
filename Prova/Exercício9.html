@@ -17,18 +17,16 @@
         cont = 20;
         resultado = document.getElementById("resultado");
         function MostrarPar(){
-            resultado.inneHTML = "Os números pares de 20 até 40 são:";
-            while(cont<=40){
-                if(cont%2==0){
-                    resultado.innerText = cont;
-                    cont++;
-                }else{
-                    cont++
+            resultado.innerHTML = "Os números pares de 20 até 40 são:";
+            while (cont <= 40) {
+                if (cont % 2 === 0) {
+                    resultado.innerHTML += " " + cont;
                 }
-                
+                cont++;
             }
-           
         }
+           
+        
         
     </script>
     
