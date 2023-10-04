@@ -29,18 +29,18 @@
             num3 = Number(document.getElementById('numero3').value);
             num4 = Number(document.getElementById('numero4').value);
             num5 = Number(document.getElementById('numero5').value);
-            nm = [num1, num2, num3, num4, num5];
+            numero = [num1, num2, num3, num4, num5];
 
 
-            nm.sort(function (a, b) {
+            numero.sort(function (a, b) {
                 return a - b;
             })
 
-            menor = nm[0];
-            maior = num[4];
+            menor = numero[0];
+            maior = numero[4];
 
-           resultado.innerText = "O maior dos números é: " + maior;
-           resultado.innerText = "O menor dos números é: " + menor;
+           resultado.innerHTML = "O maior dos números é: " + maior;
+           resultado.innerHTML = "O menor dos números é: " + menor;
         }
 
 
