@@ -6,9 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Questão 2</h1>
+    <h1>Questão 8</h1>
     
-    <h4>Calculo do IMC</h4>
+    <h4>Mostrar caso a pessoa seja uma criança ou até mesmo um idoso</h4>
     Qual é o seu nome? <input id="nome" type="caracter"><br/>
     Qual é a sua idade? <input id="idade" type="number"><br/>
     
@@ -22,16 +22,16 @@
             idade1 = Number(document.getElementById("idade").value)
             
             if (idade1 >=0 && idade1 <=12){
-                resultado.innerText = nome1 + " é uma Criança";
+                resultado.innerHTML = nome1 + " é uma Criança";
             }
             if (idade1 >= 13 && idade1 <=17){
-                resultado.innerText= nome1 + " é um Adolescente";
+                resultado.innerHTML = nome1 + " é um Adolescente";
             }
-            if(idade1>=18 && imc <= 59 ){
-                resultado.innerText = nome1 + " é um Adulto";
+            if(idade1>=18 && idade1 <= 59 ){
+                resultado.innerHTML  = nome1 + " é um Adulto";
             }
             if(idade1>=60 ){
-                resultado.innerText = nome1 + " é um Idoso";
+                resultado.innerHTML  = nome1 + " é um Idoso";
             }
             
             
