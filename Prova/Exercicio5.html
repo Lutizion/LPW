@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Questão 5</h1>
+
+    <h4>Quantas vogais tem nessa palavra?</h4>
+    Digite uma palavra: <input id="palavra" type="caracter"><br />
+
+    <button onclick="Verificar()">Verificar</button><br><br>
+    <p id="resultado"></p>
+</head>
+
+<body>
+    <script>
+        function Verificar() {
+            palavra1 = document.getElementById('palavra').value.toUpperCase();
+            resultado = document.getElementById("resultado");
+            vogal = 0;
+            for (let i = 0; i < palavra1.length; i++) {
+                let letrav = palavra[i];
+                if (letrav == 'a') {
+                    vogal++;
+                }
+                else if (letrav == "e") {
+                    vogal++;
+                }
+                else if (letrav == "i") {
+                    vogal++;
+                }
+                else if (letrav == "o") {
+                    vogal++;
+                }
+                else if (letrav == "u") {
+                    vogal++;
+                }
+            }
+
+            resultado.innerHTML = "A palavra possui " + vogal + " vogais!!";
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
