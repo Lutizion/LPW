@@ -17,11 +17,11 @@
     <input type="radio" id="somar" name="botao">
     <label for="somar">+</label>
     <input type="radio" id="subtrair" name="botao">
-    <label for="subtrair">+</label>
+    <label for="subtrair">-</label>
     <input type="radio" id="multiplicar" name="botao">
-    <label for="multiplicar">+</label>
+    <label for="multiplicar">*</label>
     <input type="radio" id="dividir" name="botao">
-    <label for="dividir">+</label>
+    <label for="dividir">/</label>
 
     <button onclick="Calcular()">Calcular</button><br><br>
     <p id="resultado"></p>
@@ -42,15 +42,15 @@
 
                 }
                 if (document.getElementById("subtrair").checked) {
-                    resultado.innerHTML = "O resultado da subtração foi: " + (numero1 + numero2);
+                    resultado.innerHTML = "O resultado da subtração foi: " + (numero1 - numero2);
 
                 }
                 if (document.getElementById("multiplicar").checked) {
-                    resultado.innerHTML = "O resultado da multiplicação foi: " + (numero1 + numero2);
+                    resultado.innerHTML = "O resultado da multiplicação foi: " + (numero1 * numero2);
 
                 }
                 if (document.getElementById("dividir").checked) {
-                    resultado.innerHTML= "O resultado da divisão foi: " + (numero1 + numero2);
+                    resultado.innerHTML= "O resultado da divisão foi: " + (numero1 / numero2);
 
                 }
 
