@@ -16,32 +16,34 @@
     Terceiro número: <br /><input id="numero3" name="num" type="number"><br />
     Quarto número: <br /><input id="numero4" name="num" type="number"><br />
     Quinto número: <br /><input id="numero5" name="num" type="number"><br />
-    <br /><button onclick="MaiorN(
-                                    )">Mostrar</button><br></br>
+    <br /><button onclick="MaiorN()">Mostrar</button><br></br>
     <p id="resultado"></p>
 
     <script>
 
         function MaiorN() {
             resultado = document.getElementById("resultado");
-            num1 = Number(document.getElementById('numero1').value);
-            num2 = Number(document.getElementById('numero2').value);
-            num3 = Number(document.getElementById('numero3').value);
-            num4 = Number(document.getElementById('numero4').value);
-            num5 = Number(document.getElementById('numero5').value);
+            num1 = Number(document.getElementById("numero1").value);
+            num2 = Number(document.getElementById("numero2").value);
+            num3 = Number(document.getElementById("numero3").value);
+            num4 = Number(document.getElementById("numero4").value);
+            num5 = Number(document.getElementById("numero5").value);
             numero = [num1, num2, num3, num4, num5];
 
 
             numero.sort(function (a, b) {
                 return a - b;
             })
-            numero.join();
 
             menor = numero[0];
-            maior = numero[4];
+            resultado.innerHTML = "O menor dos números é: " + menor;
+            numero.sort(function (a, b) {
+                return b - a;
+            })
+            maior = numero[0];
 
-           resultado.innerHTML = "O maior dos números é: " + maior;
-           resultado.innerHTML = "O menor dos números é: " + menor;
+            resultado.innerHTML = "O maior dos números é: " + maior;
+
         }
 
 
