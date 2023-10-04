@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Questão 2</h1>
+    
+    <h4>Calculo do IMC</h4>
+    Qual é o seu nome? <input id="nome" type="caracter"><br/>
+    Qual é a sua idade? <input id="idade" type="number"><br/>
+    
+    <button onclick="Mostrar()">Mostrar</button><br><br>
+    <p id="resultado"></p>
+</body>
+    <script>
+        function CalcularIMC(){
+            resultado = document.getElementById("resultado");
+            nome1 = document.getElementById("nome").value,
+            idade1 = Number(document.getElementById("idade").value)
+            
+            if (idade1 >=0 && idade1 <=12){
+                resultado.innerText = nome1 + " é uma Criança";
+            }
+            if (idade1 >= 13 && idade1 <=17){
+                resultado.innerText= nome1 + " é um Adolescente";
+            }
+            if(idade1>=18 && imc <= 59 ){
+                resultado.innerText = nome1 + " é um Adulto";
+            }
+            if(idade1>=60 ){
+                resultado.innerText = nome1 + " é um Idoso";
+            }
+            
+            
+        }
+
+
+
+
+    </script>
+</html>
