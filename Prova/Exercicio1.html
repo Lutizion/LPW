@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Questão 1</h1>
+
+    <h4>Calculo do IMC</h4>
+    Digite o primeiro número: <input id="num1" type="number"><br />
+    Digite o segundo número: <input id="num2" type="number"><br />
+
+    <input type="radio" id="somar" name="botao">
+    <label for="somar">+</label>
+    <input type="radio" id="subtrair" name="botao">
+    <label for="subtrair">+</label>
+    <input type="radio" id="multiplicar" name="botao">
+    <label for="multiplicar">+</label>
+    <input type="radio" id="dividir" name="botao">
+    <label for="dividir">+</label>
+
+    <button onclick="Calcular()">Calcular</button><br><br>
+    <p id="resultado"></p>
+</body>
+<script>
+    function Calcular() {
+
+        result = document.getElementById("resultado");
+        let check = document.getElementsByName("botao");
+
+        numero1 = Number(document.getElementById("num1").value);
+        numero2 = Number(document.getElementById("num2").value);
+        for (let i = 0; i < check.length; i++) {
+            if (check[i].checked) {
+
+                if (document.getElementById("somar").checked) {
+                    resultado.innerHTML = "O resultado da soma foi: " + (numero1 + numero2);
+
+                }
+                if (document.getElementById("subtrair").checked) {
+                    resultado.innerHTML = "O resultado da subtração foi: " + (numero1 + numero2);
+
+                }
+                if (document.getElementById("multiplicar").checked) {
+                    resultado.innerHTML = "O resultado da multiplicação foi: " + (numero1 + numero2);
+
+                }
+                if (document.getElementById("dividir").checked) {
+                    resultado.innerHTML= "O resultado da divisão foi: " + (numero1 + numero2);
+
+                }
+
+            }
+        }
+        
+    }
+
+
+
+
+</script>
+
+</html>
