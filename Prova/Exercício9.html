@@ -15,13 +15,12 @@
 <body>
     <script>
         cont = 20;
-        soma = 0;
         resultado = document.getElementById("resultado");
         function Somar(){
             resultado.inneHTML = "Os números pares de 20 até 40 são:";
             while(cont<=40){
                 if(cont%2==0){
-                    resultado.innerHTML = cont;
+                    resultado.innerText = cont;
                     cont++;
                 }else{
                     cont++
