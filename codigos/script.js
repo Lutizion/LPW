@@ -52,3 +52,10 @@ function calculadora(){
     document.getElementById("resultado").innerHTML = resultado;
 
 }
+
+function Alterah1(){
+    let tit = document.getElementById("titulo");
+
+    document.getElementById = "Bem-vindo";
+
+}
