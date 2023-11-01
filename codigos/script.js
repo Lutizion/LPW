@@ -75,7 +75,7 @@ function listar() {
     let listpara = document.getElementsByTagName("p");
     
     for (let i = 0; listpara.length-1; i++) {
-        listpara[i].textContent = "";
+        listpara[i].textContent = "LPW";
             
 }
 }
