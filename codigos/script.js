@@ -86,7 +86,7 @@ function listarNP() {
 
     for (let i = 0; listpara.length - 1; i++) {
         if(listpara[i].id %2 == 0){
-            listpara[i].textContent = i;
+            listpara[i].textContent = listpara[i].id;
         }
 
         
