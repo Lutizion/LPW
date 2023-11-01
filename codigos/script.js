@@ -65,3 +65,7 @@ function Alterap(){
     document.getElementById("paraf").innerHTML = "Aprendendo sempre mais";
 
 }
+function Novotitulo(){
+    document.getElementById("titulo").innerHTML = "novo título";
+
+}
