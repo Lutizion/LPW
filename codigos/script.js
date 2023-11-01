@@ -72,20 +72,10 @@ function Novotitulo() {
 
 function listar() {
     i = 0;
-    let listpara = [];
-    for (let i = 0; i > 4; i++) {
-        let listpara = [i];
-        if (listpara == [0]) {
-            listpara[0] = "Primeiro slot";
-        }
-        else if (listpara == [1]) {
-            listpara[1] = "Segundo slot";
-        }
-        else if (listpara == [2]) {
-            listpara[2] = "Terceiro slot";
-        } else {
-            listpara[3] = "Ultimo slot";
-        }
-        
-    }
+    let listpara = document.getElementsByTagName("p");
+    
+    for (let i = 0; i < 4; i++) {
+        listpara[i].textContent = "Exercicio";
+            
+}
 }
