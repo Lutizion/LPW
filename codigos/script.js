@@ -54,10 +54,10 @@ function calculadora(){
 }
 
 function Alterah1(){
-    let tit = document.getElementById("titulo");
+    document.getElementById("titulo").innerHTML = "Bem-Vindo!!!";
 
-    tit = "Bem-Vindo!!!"
+    
 
-    document.textContent = tit;
+    
 
 }
