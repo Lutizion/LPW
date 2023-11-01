@@ -73,9 +73,22 @@ function Novotitulo() {
 function listar() {
     i = 0;
     let listpara = document.getElementsByTagName("p");
-    
-    for (let i = 0; listpara.length-1; i++) {
+
+    for (let i = 0; listpara.length - 1; i++) {
         listpara[i].textContent = "LPW";
-            
+
+    }
 }
+
+function listarNP() {
+    i = 0;
+    let listpara = document.getElementsByTagName("p");
+
+    for (let i = 0; listpara.length - 1; i++) {
+        if(listpara[i].id %2 == 0){
+            listpara[i].textContent = i;
+        }
+
+        
+    }
 }
