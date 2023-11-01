@@ -56,8 +56,12 @@ function calculadora(){
 function Alterah1(){
     document.getElementById("titulo").innerHTML = "Bem-Vindo!!!";
 
-    
+}
+function Alterah5(){
+    document.getElementById("sub").innerHTML = "Espero que goste do site!!!";
 
-    
+}
+function Alterah5(){
+    document.getElementById("paraf").innerHTML = "Aprendendo sempre mais";
 
 }
