@@ -56,6 +56,8 @@ function calculadora(){
 function Alterah1(){
     let tit = document.getElementById("titulo");
 
-    document.getElementById = "Bem-vindo";
+    tit = "Bem-Vindo!!!"
+
+    document.textContent = tit;
 
 }
