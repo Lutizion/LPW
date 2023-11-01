@@ -1,4 +1,4 @@
-function CalcularMedia(){
+function CalcularMedia() {
 
     let num1 = Number(document.getElementById("numero1").value);
     let num2 = Number(document.getElementById("numero2").value);
@@ -6,45 +6,45 @@ function CalcularMedia(){
     let num4 = Number(document.getElementById("numero4").value);
     let num5 = Number(document.getElementById("numero5").value);
 
-    let media = (num1+num2+num3+num4+num5)/5;
+    let media = (num1 + num2 + num3 + num4 + num5) / 5;
     document.getElementById("resultado").innerHTML = "A média dos números é " + media;
 }
 
-function calculadora(){
+function calculadora() {
     let numero1; // primeiro número a ser digitado
     let numero2; // segundo número a ser digitado
-        
+
     let resultado; // resultado da soma dos números digitado
     let check = document.getElementsByName("botao");
 
     numero1 = Number(document.getElementById("num1").value);
     numero2 = Number(document.getElementById("num2").value);
 
-   
 
-    for (let i = 0; i < check.length; i++){
+
+    for (let i = 0; i < check.length; i++) {
         if (check[i].checked) {
 
-    
-            if (document.getElementById("somar").checked){
-                resultado = "O Resultado da soma foi: " + (numero1+numero2) + " !!!"
-    
+
+            if (document.getElementById("somar").checked) {
+                resultado = "O Resultado da soma foi: " + (numero1 + numero2) + " !!!"
+
             }
-            if (document.getElementById("subtrair").checked){
-                resultado = "O Resultado da subtração foi: " + (numero1-numero2) + " !!!"
-    
+            if (document.getElementById("subtrair").checked) {
+                resultado = "O Resultado da subtração foi: " + (numero1 - numero2) + " !!!"
+
             }
-            if (document.getElementById("multiplicar").checked){
-                resultado = "O Resultado da  multiplicação foi: " + (numero1*numero2) + " !!!"
-    
+            if (document.getElementById("multiplicar").checked) {
+                resultado = "O Resultado da  multiplicação foi: " + (numero1 * numero2) + " !!!"
+
             }
-            if (document.getElementById("dividir").checked){
-        
-                if(numero2 == 0){
+            if (document.getElementById("dividir").checked) {
+
+                if (numero2 == 0) {
                     resultado = "Não existe divisão por zero";
                 }
-                else{
-                    resultado = "O Resultado da divisão foi: " + (numero1/numero2) + " !!!"
+                else {
+                    resultado = "O Resultado da divisão foi: " + (numero1 / numero2) + " !!!"
                 }
             }
         }
@@ -53,19 +53,39 @@ function calculadora(){
 
 }
 
-function Alterah1(){
+function Alterah1() {
     document.getElementById("titulo").innerHTML = "Bem-Vindo!!!";
 
 }
-function Alterah5(){
+function Alterah5() {
     document.getElementById("sub").innerHTML = "Espero que goste do site!!!";
 
 }
-function Alterap(){
+function Alterap() {
     document.getElementById("paraf").innerHTML = "Aprendendo sempre mais";
 
 }
-function Novotitulo(){
+function Novotitulo() {
     document.getElementById("titulo").innerHTML = "novo título";
 
+}
+
+function listar() {
+    i = 0;
+    let listpara = [];
+    for (let i = 0; i > 4; i++) {
+        let listpara = [i];
+        if (listpara == [0]) {
+            listpara[0] = "Primeiro slot";
+        }
+        else if (listpara == [1]) {
+            listpara[1] = "Segundo slot";
+        }
+        else if (listpara == [2]) {
+            listpara[2] = "Terceiro slot";
+        } else {
+            listpara[3] = "Ultimo slot";
+        }
+        
+    }
 }
