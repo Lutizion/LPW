@@ -93,7 +93,7 @@ function listarNP() {
     }
 }
 function tabuada(){
-    let num = document.getElementById("num");
+    let num = document.getElementById("num1");
     let resultado = document.getElementById("resultado")
     resultado.innerText = "";
     for (let i = 0; i<=10; i++){
