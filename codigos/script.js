@@ -102,3 +102,9 @@ function tabuada(){
         resultado.appendChild(div);
     }
 }
+
+function MostrarM(){
+    let palavra = document.getElementById("nome").value.toUpperCase();
+    
+
+}
