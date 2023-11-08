@@ -105,7 +105,8 @@ function tabuada(){
 
 function MostrarM(){
     let palavra = document.getElementById("nome").value;
-    palavra.innerText = palavra.toUpperCase();
+    plv.innerText = palavra.toUpperCase();
+    
     
 
 
