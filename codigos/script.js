@@ -96,7 +96,7 @@ function tabuada(){
     let num = document.getElementById("num1");
     let resultado = document.getElementById("resultado")
     resultado.innerText = "";
-    for (let i = 0; i<=10; i++){
+    for (let i = 1; i<=10; i++){
         let div = document.createElement("div");
         div.innerText = num.value*i;
         resultado.appendChild(div);
