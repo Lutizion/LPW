@@ -104,8 +104,9 @@ function tabuada(){
 }
 
 function MostrarM(){
-    let palavra = document.getElementById("nome");
-    palavra.innerHTML = palavra.toUpperCase();
+    let palavra = document.getElementById("nome").value;
+    palavra.innerText = palavra.toUpperCase();
+    
 
 
 }
