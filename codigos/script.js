@@ -92,3 +92,13 @@ function listarNP() {
         
     }
 }
+function tabuada(){
+    let num = document.getElementById("num");
+    let resultado = document.getElementById("resultado")
+    resultado.innerText = "";
+    for (let i = 0; i<=10; i++){
+        let div = document.createElement("div");
+        div.innerText = num.value*i;
+        resultado.appendChild(div);
+    }
+}
