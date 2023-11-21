@@ -85,30 +85,30 @@ function listarNP() {
     let listpara = document.getElementsByTagName("p");
 
     for (let i = 0; listpara.length - 1; i++) {
-        if(listpara[i].id %2 == 0){
+        if (listpara[i].id % 2 == 0) {
             listpara[i].textContent = listpara[i].id;
         }
 
-        
+
     }
 }
-function tabuada(){
+function tabuada() {
     let num = document.getElementById("num1");
     let resultado = document.getElementById("resultado")
     resultado.innerText = "";
-    for (let i = 1; i<=10; i++){
+    for (let i = 1; i <= 10; i++) {
         let div = document.createElement("div");
-        div.innerText = num.value*i;
+        div.innerText = num.value * i;
         resultado.appendChild(div);
     }
 }
 
-function MostrarM(){
+function MostrarM() {
     let palavra = document.getElementById("nome").value;
     document.getElementById("nome").value = palavra.toUpperCase();
-    
 
-} 
+
+}
 
 function VerificarPalindromo() {
     palavra1 = document.getElementById('palavra').value.toUpperCase();
@@ -124,4 +124,30 @@ function VerificarPalindromo() {
     else {
         resultado.innerHTML = "A palavra não é um palíndromo";
     }
+}
+
+function VerificarVogais() {
+    palavra1 = document.getElementById('vogais').value.toUpperCase();
+    resultado = document.getElementById("resultado");
+    cont = 0;
+    for (let i = 0; i < palavra1.length; i++) {
+        let letrav = palavra1[i];
+        if (letrav == 'A') {
+            cont++;
+        }
+        if (letrav == "E") {
+            cont++;
+        }
+        if (letrav == "I") {
+            cont++;
+        }
+        if (letrav == "O") {
+            cont++;
+        }
+        if (letrav == "U") {
+            cont++;
+        }
+    }
+
+    resultado.innerHTML = "O total de vogais que tem nessa palavra é:  " + cont;
 }
