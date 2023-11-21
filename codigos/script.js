@@ -109,3 +109,19 @@ function MostrarM(){
     
 
 } 
+
+function VerificarPalindromo() {
+    palavra1 = document.getElementById('palavra').value.toUpperCase();
+    let nomeinvertido = "";
+    resultado = document.getElementById("resultado");
+
+    for (let i = palavra1.length - 1; i >= 0; i--) {
+        nomeinvertido += palavra1[i];
+    }
+    if (palavra1 === nomeinvertido) {
+        resultado.innerHTML = "A palavra é um palíndromo";
+    }
+    else {
+        resultado.innerHTML = "A palavra não é um palíndromo";
+    }
+}
