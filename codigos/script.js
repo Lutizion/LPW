@@ -156,5 +156,5 @@ function Somar(){
     numero2 = Number(document.getElementById("num2").value);
 
     var resultado = document.getElementById("resultado");
-    resultado.innerHTML = "A soma desses numeros é: " + (num1 + num2);
+    resultado.innerText = "A soma desses numeros é: " + (num1 + num2);
 }
