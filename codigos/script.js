@@ -152,9 +152,9 @@ function VerificarVogais() {
     resultado.innerHTML = "O total de vogais que tem nessa palavra é:  " + cont;
 }
 function Somar(){
-    numero1 = Number(document.getElementById("num1").value);
-    numero2 = Number(document.getElementById("num2").value);
+    num1 = Number(document.getElementById("num1").value);
+    num2 = Number(document.getElementById("num2").value);
 
-    var resultado = document.getElementById("resultado");
+    resultado = document.getElementById("resultado");
     resultado.textContent = "A soma desses numeros é: " + (num1 + num2);
 }
