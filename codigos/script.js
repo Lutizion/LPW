@@ -158,3 +158,7 @@ function Somar(){
     resultado = document.getElementById("resultado");
     resultado.textContent = "A soma desses numeros é: " + (num1 + num2);
 }
+
+function MostrarHorario(){
+    
+}
