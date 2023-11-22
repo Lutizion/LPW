@@ -165,6 +165,6 @@ function MostrarHorario(){
     resultado.textContent = data;
 }
 function EsconderHorario(){
-    resultado = "";
-    resultado.textContent = resultado;
+    document.getElementById("resultado") = "";
+    
 }
