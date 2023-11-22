@@ -164,3 +164,7 @@ function MostrarHorario(){
     resultado = document.getElementById("resultado");
     resultado.textContent = data;
 }
+function EsconderHorario(){
+    resultado = "";
+    resultado.textContent = resultado;
+}
