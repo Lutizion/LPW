@@ -159,12 +159,12 @@ function Somar(){
     resultado.textContent = "A soma desses numeros é: " + (num1 + num2);
 }
 
-function MostrarHorario(horario){
+function MostrarHorario(){
     let data = new Date().toLocaleString();
     resultado = document.getElementById("resultado");
     resultado.textContent = data;
 }
-function EsconderHorario(horario){
-    document.getElementById("resultado") = "";
+function EsconderHorario(){
+    document.getElementById("resultado").innerHTML = "";
     
 }
