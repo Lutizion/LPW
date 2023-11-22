@@ -160,5 +160,7 @@ function Somar(){
 }
 
 function MostrarHorario(){
-    
+    let data = new Date().toLocaleString();
+    resultado = document.getElementById("resultado");
+    resultado.textContent = data;
 }
